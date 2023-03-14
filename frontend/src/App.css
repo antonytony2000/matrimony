@@ -1,0 +1,136 @@
+body {
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0%;
+}
+
+.home_row1 {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+
+}
+
+.home_row1_left {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+    width: 45%;
+}
+
+.home_row1_right {
+    display: flex;
+    flex-direction: row;
+    padding-right: 5%;
+    width: 45%;
+    justify-content: right;
+    align-items: center;
+}
+
+.home_row1_left_text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 5%;
+}
+
+.home_row1_right button {
+    color: aliceblue;
+    background-color: rgb(71, 71, 241);
+    margin-left: 10px;
+    border: 0;
+    border-radius: 20px;
+    padding: 10px 20px;
+
+}
+
+.home_row1_right button:hover {
+    background-color: darkblue;
+}
+
+.home_row2 {
+    background-color: rgb(66, 137, 53);
+    padding: 200px 10%; 
+    background-attachment: fixed;
+    color: white;
+}
+
+.home_row2_inner {
+    background-color: rgba(14, 14, 1, 0.400);
+    padding: 50px 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.home_row2_inner_row3 {
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+}
+
+.home_row2_inner_row3 div,
+.home_row2_inner_row3 button {
+    width: 25%;
+}
+
+.home_row2_inner_row3_1,
+.home_row2_inner_row3_2,
+.home_row2_inner_row3_3 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    justify-content: space-between;
+}
+
+.home_row2_inner_row3 input,
+.home_row2_inner_row3 select {
+    box-sizing: border-box;
+    width: 100%;
+    border: 0;
+    outline: 0;
+
+}
+
+.home_row2_inner_row3 button {
+    background-color: rgb(71, 71, 241);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 0;
+}
+
+.home_row2_inner_row4 {
+    text-align: right;
+}
+
+.home_row2_inner_row4 span {
+    color: rgb(71, 71, 241);
+}
+
+
+.home_row2_inner_row3_2 {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.home_row3 {
+    background-color: white;
+}
+
+.home_row3 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 5%;
+}
+
+.home_row3 li {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    text-align: center;
+}

@@ -1,0 +1,106 @@
+body {
+    background-color: rgb(242, 246, 250);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0%;
+}
+
+.register_row1 {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 5px 5%;
+    border-bottom: 2px solid gray;
+}
+
+.register_row1_text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+
+}
+
+.register_row2 {
+    text-align: right;
+    margin-right: 5%;
+    background-color: rgb(242, 246, 250);
+    padding-top: 8%;
+}
+
+.register_row3 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.register_row3_1 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(198, 206, 214);
+    width: 100%;
+    align-items: center;
+    padding-top: 11%;
+    padding-bottom: 11%;
+    width: 50%;
+
+
+}
+
+.register_row3_2 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 50%;
+
+}
+
+.register_row3_2_button {
+    padding-top: 20px;
+    padding-left: 80%;
+}
+
+.register_row3_2_label2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.register_row3_2_label2 input {
+    width: 50%;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: 0;
+
+}
+
+.register_row3_2_label2 label {
+    width: 50%;
+}
+
+.register_row4 {
+    text-align: center;
+}
+
+.register_row3_2 label {
+    margin-bottom: 30px;
+    margin-left: 20px;
+    ;
+
+}
+
+.register_row3_2_label1 {
+    font-size: 1.2rem;
+    padding-top: 4px;
+
+}
+
+.register_row3_2_button button {
+    color: white;
+    background-color: orange;
+    padding: 15px 30px;
+    border: 0;
+    border-radius: 15px;
+
+
+}
