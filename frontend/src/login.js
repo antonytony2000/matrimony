@@ -1,5 +1,9 @@
-import "./login.css";
-export default function App() {
+import "./Login.css";
+import { useNavigate } from "react-router-dom";
+export default function Login() {
+    const Navigate = useNavigate();
+    const handleclick = () => { Navigate("Inside")}
+    // Navigate("Inside")
     return <>
         <div className="login_row">
             <div className="login_row_1">
@@ -20,7 +24,7 @@ export default function App() {
                 <label>Keep me logged in</label>
             </div>
             <div className="login_row_5">
-                <button>LOGIN</button>
+            <button onClick={e => handleclick(e)}>LOGIN</button>
             </div>
             <div className="login_row_6">
                 <label>Forgot Password? | Login Via OTP</label>

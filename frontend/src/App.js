@@ -1,4 +1,5 @@
 import "./App.css";
+import { useNavigate } from "react-router-dom";
 import logo from "./images/logo.svg";
 import b1 from "./images/b1.webp";
 import b2 from "./images/b2.webp";
@@ -8,8 +9,10 @@ import b5 from "./images/b5.webp";
 import bg from "./images/bg.webp";
 
 export default function App() {
+  const Navigate = useNavigate();
+  const handleclick = () => { Navigate("Login") }
+  const handleclick1 = () => { Navigate("Reg") }
   return <>
-
     <div className="home_row1">
       <div className="home_row1_left">
         <img src={logo} />
@@ -20,7 +23,7 @@ export default function App() {
       </div>
       <div className="home_row1_right">
         <label>Already a member?</label>
-        <button>Log In</button>
+        <button onClick={e => handleclick(e)}>Log In</button>
       </div>
     </div>
 
@@ -34,7 +37,7 @@ export default function App() {
             <select>
               <option>SELECT</option>
               <option>Self</option>
-              <option>Relative</option>
+              <option>Realtive</option>
               <option>Friend</option>
             </select>
           </div>
@@ -46,7 +49,7 @@ export default function App() {
             <label>Mobile Number</label>
             <input placeholder="Mobile Number" type={"text"} />
           </div>
-          <button>Register Free</button>
+          <button onClick={e => handleclick1(e)}>Register Free</button>
         </div>
         <label className="home_row2_inner_row4">
           By clicking on Register Free, you agree to <span>Terms & Conditions</span>and<span>Privacy Policy</span></label>

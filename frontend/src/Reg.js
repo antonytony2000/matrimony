@@ -1,7 +1,7 @@
 import "./Reg.css";
 import logo from "./images/logo.svg";
 import tick from "./images/tick.webp";
-export default function App() {
+export default function Reg() {
     return <>
         <div className="register_row1">
             <img src={logo} />
