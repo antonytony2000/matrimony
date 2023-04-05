@@ -30,6 +30,9 @@ body {
     flex-direction: row;
     height: 250px;
     border-radius: 20px;
+    width: 70%;
+
+
 }
 
 .final_row2_1 img {
@@ -66,4 +69,12 @@ body {
     border-radius: 20px;
     padding-left: 6%;
     padding-top: 20px;
+}
+.FInal_row2_col1_row4_col1,.FInal_row2_col1_row4_col2{
+    width: 100%;
+    
+}
+.Final_row2_col1_row4{
+    width: 150%;
+   
 }

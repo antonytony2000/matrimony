@@ -2,30 +2,33 @@ const express = require("express");
 const { json } = require("express/lib/response");
 const app = express();
 app.use(express.json())
-app.post("/Addition", (req, res) => {
-    let a = req.body.num1;
-    let b = req.body.num2;
-    let sum = a + b;
-    res.send(sum + "");
+
+const mysql=require("mysql");
+const con= mysql.createConnection({
+    host:"localhost",
+    user:"root",
+    password:"pw",
+    database:"matrimony"
+});
+
+con.connect(function(err){
+    if (err) throw err;
+    console.log("connection established");
+
 })
-app.post("/Subtraction", (req, res) => {
-    let a = req.body.num1;
-    let b = req.body.num2;
-    let diff = a - b;
-    res.send(diff + "");
+
+app.post("/Register",(req,res)=>{
+    let Profile=req.body.Profile;
+    let User=req.body.User;
+    let Mob=req.body.Mob;
+let sql="insert into tblusers(txtProfileFor,txtUsername,txtMob) values('"+Profile+"','"+User+"','"+Mob+"');";
+con.query(sql,(err,result)=>{
+    if (err) throw err;
+    res.send(result);
 })
-app.post("/Multiplication", (req, res) => {
-    let a = req.body.num1;
-    let b = req.body.num2;
-    let pro = a * b;
-    res.send(pro + "");
 })
-app.post("/Division", (req, res) => {
-    let a = req.body.num1;
-    let b = req.body.num2;
-    let rem = a / b;
-    res.send(rem + "");
-})
+
+
 app.listen(8000, () => {
     console.log("port 8000 active")
 })
