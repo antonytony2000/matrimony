@@ -1,5 +1,6 @@
 import "./App.css";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import logo from "./images/logo.svg";
 import b1 from "./images/b1.webp";
 import b2 from "./images/b2.webp";
@@ -7,11 +8,24 @@ import b3 from "./images/b3.webp";
 import b4 from "./images/b4.webp";
 import b5 from "./images/b5.webp";
 import bg from "./images/bg.webp";
+import axios from "axios";
 
 export default function App() {
   const Navigate = useNavigate();
-  const handleclick = () => { Navigate("Login") }
-  const handleclick1 = () => { Navigate("Reg") }
+  const handleclick = () => { Navigate("/Login") }
+  const [profilefor, setprofilefor] = useState("")
+  const [name, setname] = useState("")
+  const [mobno, setmobno] = useState("")
+  const handleclick1=()=>{
+    let url="http://localhost:8000/Register"
+    let request={Profile:profilefor,User:name,Mob:mobno}
+    let header={};
+    axios.post(url,request,header).then((res)=>{
+      console.log(res.data)
+      Navigate("/Reg")
+    }).catch()
+}
+
   return <>
     <div className="home_row1">
       <div className="home_row1_left">
@@ -34,20 +48,24 @@ export default function App() {
         <div className="home_row2_inner_row3">
           <div className="home_row2_inner_row3_1">
             <label><span>Matrimony Profile For</span></label>
-            <select>
+            <select onChange={(e) => {setprofilefor(e.target.value) }}>
               <option>SELECT</option>
               <option>Self</option>
-              <option>Realtive</option>
+              <option>Relative</option>
               <option>Friend</option>
-            </select>
+                </select>
+                {profilefor}
           </div>
           <div className="home_row2_inner_row3_2">
             <label><span>Name</span></label>
-            <input placeholder="Name" type={"text"} />
+            <input placeholder="Name" type={"text"} onChange={(e) => {setname(e.target.value) }} />
+            {name}
           </div>
+          
           <div className="home_row2_inner_row3_3">
             <label>Mobile Number</label>
-            <input placeholder="Mobile Number" type={"text"} />
+            <input placeholder="Mobile Number" type={"text"} onChange={(e) => {setmobno(e.target.value) }} />
+            {mobno}
           </div>
           <button onClick={e => handleclick1(e)}>Register Free</button>
         </div>

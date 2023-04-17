@@ -1,9 +1,31 @@
 import "./Inside.css";
+import { useNavigate } from "react-router-dom";
 import logo from "./images/logo.svg";
 import profile from "./images/profile.webp";
 import icon from "./images/icon.png";
 import bg2 from "./images/bg2.jpg";
+import axios from "axios";
+import { useEffect, useState } from "react";
 export default function Inside() {
+    const Navigate = useNavigate();
+    const [search, setsearch] = useState("")
+    useEffect(() => {
+        let url = "http://localhost:8000/profile_selectall"
+        let request = {}
+        let header = {};
+        axios.post(url, request, header).then((res) => {
+            console.log(res.data)
+        }).catch()
+    }, [])
+    const handleclick = () => {
+        let url="http://localhost:8000/inside"
+        let request={}
+        let header={};
+        axios.post(url,request,header).then((res)=>{
+            console.log(res.data)
+            Navigate("/Final")
+        }).catch()
+        }
     return <>
         <div className="inside_row1" style={{ backgroundImage: `url(${bg2})` }}>
             <div className="inside_row1_1">
@@ -18,12 +40,13 @@ export default function Inside() {
                 <img src={icon} />
             </div>
             <div className="inside_row1_2">
-                <input type={"text"} />
+                <input type={"text"} onChange={(e) => { setsearch(e.target.value) }} />
                 <button>SEARCH</button>
+                {search}
             </div>
         </div>
         <div className="inside_row2">
-            <div className="inside_row2_1">
+            <div className="inside_row2_1"onClick={e => handleclick(e)}>
                 <img src={profile} />
                 <div className="inside_row2_1_t">
                     <h2>WTTR**</h2>

@@ -1,7 +1,7 @@
 body {
-    background-color: rgb(242, 246, 250);
+    /* background-color: #f0f0f0; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0%;
+    margin: 0;
 }
 
 .register_row1 {
@@ -10,6 +10,7 @@ body {
     background-color: white;
     padding: 5px 5%;
     border-bottom: 2px solid gray;
+    width: 100%;
 }
 
 .register_row1_text {
@@ -23,9 +24,14 @@ body {
 
 .register_row2 {
     text-align: right;
-    margin-right: 5%;
-    background-color: rgb(242, 246, 250);
     padding-top: 8%;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    
+}
+.register_row2 label{
+    padding-right: 5%;
 }
 
 .register_row3 {
@@ -33,6 +39,7 @@ body {
     flex-direction: row;
     margin-left: 5%;
     margin-right: 5%;
+
 }
 
 .register_row3_1 {
