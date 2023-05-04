@@ -30,7 +30,7 @@ app.post("/Register", (req, res) => {
     })
 })
 
-app.post("/login", (req, res) => {
+app.post("/Register2", (req, res) => {
     let dtdob = req.body.dtdob;
     let txtEmail = req.body.txtEmail;
     let txtPassword = req.body.txtPassword;
@@ -41,7 +41,7 @@ app.post("/login", (req, res) => {
     })
 })
 
-app.post("/login2", (req, res) => {
+app.post("/login", (req, res) => {
     let txtEmail = req.body.txtEmail;
     let txtPassword = req.body.txtPassword;
     let sql = "select id from tblusers where txtEmail='" + txtEmail + "' and txtPassword ='" + txtPassword + "'";
@@ -61,7 +61,7 @@ app.post("/search", (req, res) => {
     })
 })
 
-app.post("/inside", (req, res) => {
+app.post("/singleuser", (req, res) => {
     let id = req.body.id
     let sql = "select id,txtEmail,txtUsername,txtMob from tblusers where id ='" + id + "'";
     console.log(sql);
@@ -72,13 +72,16 @@ app.post("/inside", (req, res) => {
 })
 
 app.post("/profile_selectall", (req, res) => {
-    let sql = "select id,txtEmail,txtUsername,txtMob from tblusers";
+    let sql = "select * from tblusers";
     console.log(sql);
     con.query(sql, (err, result) => {
         if (err) throw err;
         res.send(result);
     })
 })
+
+
+
 
 app.listen(8000, () => {
     console.log("port 8000 active")

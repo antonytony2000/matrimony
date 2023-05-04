@@ -16,15 +16,22 @@ export default function App() {
   const [profilefor, setprofilefor] = useState("")
   const [name, setname] = useState("")
   const [mobno, setmobno] = useState("")
-  const handleclick1=()=>{
-    let url="http://localhost:8000/Register"
-    let request={Profile:profilefor,User:name,Mob:mobno}
-    let header={};
-    axios.post(url,request,header).then((res)=>{
-      console.log(res.data)
-      Navigate("/Reg")
-    }).catch()
-}
+  
+  const handleclick1 = () => {
+    if (profilefor == "" || name == "" || mobno == "") {
+      alert("All fields are mandatory !")
+
+    }
+    else {
+      let url = "http://localhost:8000/Register"
+      let request = { Profile: profilefor, User: name, Mob: mobno }
+      let header = {};
+      axios.post(url, request, header).then((res) => {
+        console.log(res.data)
+        Navigate("/Reg")
+      }).catch()
+    }
+  }
 
   return <>
     <div className="home_row1">
@@ -48,30 +55,29 @@ export default function App() {
         <div className="home_row2_inner_row3">
           <div className="home_row2_inner_row3_1">
             <label><span>Matrimony Profile For</span></label>
-            <select onChange={(e) => {setprofilefor(e.target.value) }}>
+            <select onChange={(e) => { setprofilefor(e.target.value) }}>
               <option>SELECT</option>
               <option>Self</option>
               <option>Relative</option>
               <option>Friend</option>
-                </select>
-                {profilefor}
+            </select>
+            {profilefor}
           </div>
           <div className="home_row2_inner_row3_2">
             <label><span>Name</span></label>
-            <input placeholder="Name" type={"text"} onChange={(e) => {setname(e.target.value) }} />
+            <input placeholder="Name" type={"text"} onChange={(e) => { setname(e.target.value) }} />
             {name}
           </div>
-          
+
           <div className="home_row2_inner_row3_3">
             <label>Mobile Number</label>
-            <input placeholder="Mobile Number" type={"text"} onChange={(e) => {setmobno(e.target.value) }} />
+            <input placeholder="Mobile Number" type={"text"} onChange={(e) => { setmobno(e.target.value) }} />
             {mobno}
           </div>
           <button onClick={e => handleclick1(e)}>Register Free</button>
         </div>
         <label className="home_row2_inner_row4">
           By clicking on Register Free, you agree to <span>Terms & Conditions</span>and<span>Privacy Policy</span></label>
-
       </div>
     </div>
     <div className="home_row3">

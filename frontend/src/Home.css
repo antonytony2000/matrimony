@@ -1,11 +1,9 @@
 body {
-    /* background-color: #d3d3d3; */
-
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0%;
 }
 
-.inside_row1 {
+.Home_row1 {
     width: 100%;
     height: 380px;
     position: absolute;
@@ -13,7 +11,7 @@ body {
     background-size: cover;
 }
 
-.inside_row1_1 {
+.Home_row1_1 {
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -25,11 +23,11 @@ body {
     justify-content: space-between;
 }
 
-.inside_row1_logo {
+.Home_row1_logo {
     margin-left: 10px;
 }
 
-.inside_row1_2 {
+.Home_row1_2 {
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -39,26 +37,26 @@ body {
     justify-content: space-between;
 }
 
-.inside_row1_2 input {
+.Home_row1_2 input {
     border: none;
     width: 90%;
     outline: 0;
 }
 
-.inside_row1_2 button {
+.Home_row1_2 button {
     border: none;
     width: 10%;
     color: white;
     background-color: #d9475c;
 }
 
-.inside_row2 {
+.Home_row2 {
     padding-top: 380px;
     height: 220px;
 
 }
 
-.inside_row2_1 {
+.Home_row2_1 {
     display: flex;
     flex-direction: row;
 
@@ -68,30 +66,30 @@ body {
     border-radius: 20px;
 }
 
-.inside_row2_1 img {
+.Home_row2_1 img {
 
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 
 }
 
-.inside_row2_1_t {
+.Home_row2_1_t {
     display: flex;
     flex-direction: column;
 }
 
 
 
-.inside_row2_1_t {
+.Home_row2_1_t {
     margin-left: 18px;
     width: 100%;
     display: flex;
 }
 
-.inside_row2_1_t_1,
-.inside_row2_1_t_2,
-.inside_row2_1_t_4,
-.inside_row2_1_t_3 {
+.Home_row2_1_t_1,
+.Home_row2_1_t_2,
+.Home_row2_1_t_4,
+.Home_row2_1_t_3 {
    
     display: flex;
     width: 35%;
@@ -101,7 +99,7 @@ body {
 }
 
 
-.inside_row2_2 {
+.Home_row2_2 {
     display: flex;
     flex-direction: row;
 
@@ -111,30 +109,32 @@ body {
     border-radius: 20px;
 }
 
-.inside_row2_2 img {
+.Home_row2_2 img {
 
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    background-color: #d3d3d3;
 
 }
 
-.inside_row2_2_t {
+.Home_row2_2_t {
     display: flex;
     flex-direction: column;
+    
 }
 
 
 
-.inside_row2_2_t {
+.Home_row2_2_t {
     margin-left: 18px;
     width: 100%;
     display: flex;
 }
 
-.inside_row2_2_t_1,
-.inside_row2_2_t_2,
-.inside_row2_2_t_4,
-.inside_row2_2_t_3 {
+.Home_row2_2_t_1,
+.Home_row2_2_t_2,
+.Home_row2_2_t_4,
+.Home_row2_2_t_3 {
    
     display: flex;
     width: 35%;
@@ -142,7 +142,7 @@ body {
 
 
 
-.inside_row2_3 {
+.Home_row2_3 {
     display: flex;
     flex-direction: row;
 
@@ -152,20 +152,20 @@ body {
     border-radius: 20px;
 }
 
-.inside_row2_3 img {
+.Home_row2_3 img {
 
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 
 }
 
-.inside_row2_3_t {
+.Home_row2_3_t {
     display: flex;
     flex-direction: column;
 }
 
 
-.inside_row2_4 {
+.Home_row2_4 {
     display: flex;
     flex-direction: row;
 
@@ -175,30 +175,30 @@ body {
     border-radius: 20px;
 }
 
-.inside_row2_4 img {
+.Home_row2_4 img {
 
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 
 }
 
-.inside_row2_4_t {
+.Home_row2_4_t {
     display: flex;
     flex-direction: column;
 }
 
 
 
-.inside_row2_4_t {
+.Home_row2_4_t {
     margin-left: 18px;
     width: 100%;
     display: flex;
 }
 
-.inside_row2_4_t_1,
-.inside_row2_4_t_2,
-.inside_row2_4_t_4,
-.inside_row2_4_t_3 {
+.Home_row2_4_t_1,
+.Home_row2_4_t_2,
+.Home_row2_4_t_4,
+.Home_row2_4_t_3 {
    
     display: flex;
     width: 35%;
@@ -206,7 +206,7 @@ body {
 
 
 
-.inside_row2_5 {
+.Home_row2_5 {
     display: flex;
     flex-direction: row;
 
@@ -216,30 +216,30 @@ body {
     border-radius: 20px;
 }
 
-.inside_row2_5 img {
+.Home_row2_5 img {
 
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 
 }
 
-.inside_row2_5_t {
+.Home_row2_5_t {
     display: flex;
     flex-direction: column;
 }
 
 
 
-.inside_row2_5_t {
+.Home_row2_5_t {
     margin-left: 18px;
     width: 100%;
     display: flex;
 }
 
-.inside_row2_5_t_1,
-.inside_row2_5_t_2,
-.inside_row2_5_t_4,
-.inside_row2_5_t_3 {
+.Home_row2_5_t_1,
+.Home_row2_5_t_2,
+.Home_row2_5_t_4,
+.Home_row2_5_t_3 {
    
     display: flex;
     width: 35%;
@@ -247,16 +247,16 @@ body {
 
 
 
-.inside_row2_3_t {
+.Home_row2_3_t {
     margin-left: 18px;
     width: 100%;
     display: flex;
 }
 
-.inside_row2_3_t_1,
-.inside_row2_3_t_2,
-.inside_row2_3_t_4,
-.inside_row2_3_t_3 {
+.Home_row2_3_t_1,
+.Home_row2_3_t_2,
+.Home_row2_3_t_4,
+.Home_row2_3_t_3 {
    
     display: flex;
     width: 35%;

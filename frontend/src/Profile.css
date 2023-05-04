@@ -1,10 +1,9 @@
 body {
-
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0%;
 }
 
-.Final_row1 {
+.Profile_row1 {
     display: flex;
     background-color: white;
     height: 50px;
@@ -13,17 +12,17 @@ body {
     border-bottom: 1px solid green;
 }
 
-.Final_row1 ul {
+.Profile_row1 ul {
     display: flex;
     flex-direction: row;
 }
 
-.Final_row1 li {
+.Profile_row1 li {
     list-style: none;
     padding-left: 20px;
 }
 
-.Final_row2_col1 {
+.Profile_row2_col1 {
     background-color:#f0f0f0;
     margin: 60px 15%;
     display: flex;
@@ -31,11 +30,9 @@ body {
     height: 250px;
     border-radius: 20px;
     width: 70%;
-
-
 }
 
-.final_row2_1 img {
+.Profile_row2_1 img {
     border-radius: 10px;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
@@ -43,24 +40,24 @@ body {
     width: 240px;
 }
 
-.Final_row2_col1_row4{
+.Profile_row2_col1_row4{
     display: flex;
     flex-direction: row;
 } 
 
-.Final_row2_col1_row1,.Final_row2_col1_row2,.Final_row2_col1_row3{
+.Profile_row2_col1_row1,.Profile_row2_col1_row2,.Profile_row2_col1_row3{
     padding-left: 6%;
 }
-.Final_row2_col1_row4{
+.Profile_row2_col1_row4{
     padding-left: 8%;
 }
 
-.Final_row2_col1_row3 span {
+.Profile_row2_col1_row3 span {
     color: rgb(71, 71, 241);
 
 }
 
-.Final_row2_col2 {
+.Profile_row2_col2 {
     background-color:#f0f0f0;
     margin: 40px 15%;
     display: flex;
@@ -70,11 +67,9 @@ body {
     padding-left: 6%;
     padding-top: 20px;
 }
-.FInal_row2_col1_row4_col1,.FInal_row2_col1_row4_col2{
+.Profile_row2_col1_row4_col1,.Profile_row2_col1_row4_col2{
     width: 100%;
-    
 }
-.Final_row2_col1_row4{
+.Profile_row2_col1_row4{
     width: 150%;
-   
 }
